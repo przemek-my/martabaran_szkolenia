@@ -51,6 +51,33 @@ html {
     text-transform: uppercase;
     color: #737373;
   }
+
+  /* Kreska pod głównym nagłówkiem */
+.hero-line {
+    width: 48px;          /* szerokość jak w program szkolenia */
+    height: 1px;          /* cienka kreska */
+    background: rgba(0,0,0,0.2); /* subtelny kolor */
+    margin: 12px auto 24px auto; /* odstęp od h1 i subtitle */
+    border-radius: 1px;   /* lekko zaokrąglone końce */
+  }
+
+  /* Podpis autora w hero */
+.hero-author {
+    display: block;
+    margin-top: 12px; /* lekko pod subtitle */
+    font-size: 12px; /* trochę mniejsza niż subtitle */
+    font-weight: 300; /* cienka */
+    letter-spacing: 0.15em; /* lekki tracking dla elegancji */
+    color: #737373; /* pasuje do subtitle */
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Hover efekt subtelny (opcjonalny) */
+  .hero-author:hover {
+    opacity: 1;
+  }
+  
   
   /* ========================= */
   /* SCROLL INDICATOR */
