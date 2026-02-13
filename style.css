@@ -206,3 +206,90 @@ html {
     max-width: 600px;
   }
   
+
+  /* ========================= */
+/* MOBILE OPTIMIZATION */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    /* HERO */
+  
+    .hero {
+      padding: 0 20px;
+    }
+  
+    .hero h1 {
+      font-size: 36px;
+      letter-spacing: 0.15em;
+    }
+  
+    .hero p {
+      font-size: 12px;
+      letter-spacing: 0.25em;
+      margin-top: 18px;
+    }
+  
+    .scroll-indicator {
+      bottom: 40px;
+    }
+  
+    .scroll-line {
+      height: 32px;
+    }
+  
+    /* PROGRAM */
+  
+    .program {
+      padding: 80px 20px;
+    }
+  
+    .program-header h2 {
+      font-size: 18px;
+      letter-spacing: 0.18em;
+    }
+  
+    .program-header p {
+      font-size: 14px;
+      line-height: 1.7;
+    }
+  
+    .animated-line {
+      width: 36px;
+    }
+  
+    /* MODULE CARDS */
+  
+    .modules {
+      gap: 18px;
+    }
+  
+    .module-card {
+      padding: 32px 24px;
+      border-radius: 20px;
+    }
+  
+    .bg-number {
+      font-size: 56px;
+      top: 18px;
+      right: 18px;
+    }
+  
+    .label {
+      font-size: 10px;
+      letter-spacing: 0.15em;
+    }
+  
+    .module-card h3 {
+      font-size: 18px;
+    }
+  
+    .module-card p {
+      font-size: 14px;
+      line-height: 1.7;
+    }
+  
+    .hover-line {
+      margin-top: 10px;
+    }
+  }
