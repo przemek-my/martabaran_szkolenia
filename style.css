@@ -8,7 +8,7 @@ html {
 
 body {
   margin: 0;
-  background: #ededed;
+  background: rgb(250, 250, 250);
   color: #202020;
   font-family: 'Jost', sans-serif;
 }
@@ -27,7 +27,7 @@ body {
 ======================================================= */
 
 .hero-section {
-  position: relative; /* KLUCZOWE */
+  position: relative;
   height: 100vh;
   padding: 0 24px;
   display: flex;
@@ -35,7 +35,6 @@ body {
   justify-content: center;
   text-align: center;
 }
-
 
 .hero-section h1 {
   margin: 0;
@@ -76,7 +75,6 @@ body {
   opacity: 1;
 }
 
-
 /* --- Hero Animation --- */
 
 .hero {
@@ -113,7 +111,6 @@ body {
   transition: opacity 0.4s ease;
 }
 
-
 .scroll-indicator.visible {
   opacity: 1;
 }
@@ -148,7 +145,7 @@ body {
 ======================================================= */
 
 .academy-wrapper {
-  padding: 180px 24px;
+  padding: 140px 24px; /* consistent top/bottom spacing */
   background-color: white;
 }
 
@@ -175,7 +172,7 @@ body {
 
 .academy-intro {
   max-width: 720px;
-  margin: 70px auto 0;
+  margin: 60px auto 0; /* consistent spacing */
 }
 
 .academy-intro p {
@@ -188,7 +185,7 @@ body {
 /* --- Pillars --- */
 
 .academy-pillars {
-  margin-top: 110px;
+  margin-top: 100px; /* consistent spacing */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 80px;
@@ -228,11 +225,11 @@ body {
 
 .academy-for {
   max-width: 600px;
-  margin: 130px auto 0;
+  margin: 120px auto 0; /* consistent spacing */
 }
 
 .academy-for h3 {
-  margin-bottom: 40px;
+  margin-bottom: 36px; /* consistent spacing */
   font-size: 12px;
   letter-spacing: 0.35em;
   text-transform: uppercase;
@@ -253,7 +250,7 @@ body {
 }
 
 .academy-cta {
-  margin-top: 120px;
+  margin-top: 100px; /* consistent spacing */
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -266,8 +263,8 @@ body {
 ======================================================= */
 
 .program-wrapper {
-  padding: 120px 24px;
-  background: linear-gradient(to bottom, whitesmoke, #fafafa);
+  padding: 140px 24px; /* same as academy-wrapper */
+  background: linear-gradient(to bottom, rgb(250, 250, 250), #fafafa);
 }
 
 .program-header {
@@ -289,7 +286,6 @@ body {
   line-height: 1.8;
   opacity: 0.7;
 }
-
 
 /* --- Modules --- */
 
@@ -408,11 +404,37 @@ body {
     height: 32px;
   }
 
-  /* Program */
-  .program-wrapper {
-    padding: 80px 20px;
+  /* Academy section */
+  .academy-wrapper {
+    padding: 100px 20px; /* proportional spacing */
   }
 
+  .academy-intro {
+    margin-top: 50px; /* proportional */
+  }
+
+  .academy-pillars {
+    margin-top: 80px; /* proportional */
+  }
+
+  .academy-for {
+    margin-top: 100px; /* proportional */
+  }
+
+  .academy-for h3 {
+    margin-bottom: 32px;
+  }
+
+  .academy-title {
+    font-size: 18px;
+    letter-spacing: 0.18em;
+  }
+
+  /* Program section */
+  .program-wrapper {
+    padding: 100px 20px; /* same as academy-wrapper */
+  }
+  
   .program-header h2 {
     font-size: 18px;
     letter-spacing: 0.18em;
