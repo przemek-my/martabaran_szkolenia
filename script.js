@@ -70,7 +70,9 @@ window.addEventListener("DOMContentLoaded", () => {
   // =============================
   // KARTY — FADE IN ON SCROLL
   // =============================
-  const cards = document.querySelectorAll('.module-card');
+  const revealElements = document.querySelectorAll(
+    '.module-card, .academy-wrapper'
+  );
   
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -80,5 +82,35 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   }, { threshold: 0.2 });
   
-  cards.forEach(card => observer.observe(card));
+  revealElements.forEach(el => observer.observe(el));
   
+  
+  window.addEventListener("load", () => {
+
+  // HERO pokazuje się po zakończeniu intro
+  setTimeout(() => {
+    document.querySelector(".hero-section").classList.add("hero-visible");
+  }, 2500);
+
+});
+
+// 1️⃣ Zablokuj scroll od razu
+document.body.classList.add('no-scroll');
+
+// 2️⃣ Po zakończeniu intro → odblokuj scroll
+window.addEventListener("load", () => {
+
+  // delay dopasowany do Twojej animacji intro (~3 sekundy)
+  setTimeout(() => {
+    // usuń overlay
+    const intro = document.querySelector('.intro-overlay');
+    if (intro) intro.style.display = 'none';
+
+    // odblokuj scroll
+    document.body.classList.remove('no-scroll');
+
+    // uruchom animacje hero
+    document.querySelector(".hero-section")?.classList.add("reveal-visible");
+
+  }, 3000); // czas w ms → dopasuj do długości animacji intro
+});
