@@ -381,7 +381,6 @@ body {
   line-height: 1.8;
   opacity: 0.7;
 }
-
 /* =======================================================
    INTRO LANDING
 ======================================================= */
@@ -396,9 +395,13 @@ body {
   z-index: 9999;
   animation: introFadeOut 1s ease forwards;
   animation-delay: 1.8s;
+  padding: 0 24px; /* dodany padding dla telefonów */
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .intro-content {
+  max-width: 90%; /* ograniczenie szerokości na mobile */
   text-align: center;
   opacity: 0;
   transform: translateY(30px);
@@ -411,6 +414,7 @@ body {
   font-weight: 300;
   letter-spacing: 0.25em;
   text-transform: uppercase;
+  word-break: break-word; /* zapobiega wychodzeniu słów poza ekran */
 }
 
 .intro-line {
@@ -462,8 +466,6 @@ body {
   }
 }
 
-
-
 /* =======================================================
    RESPONSIVE
 ======================================================= */
@@ -485,6 +487,21 @@ body {
 }
 
 @media (max-width: 768px) {
+
+  /* Intro landing fix */
+  .intro-overlay {
+    padding: 0 20px;
+  }
+
+  .intro-name {
+    font-size: 32px;
+    letter-spacing: 0.2em;
+  }
+
+  .intro-role {
+    font-size: 12px;
+    letter-spacing: 0.25em;
+  }
 
   /* Hero */
   .hero-section h1 {
@@ -508,19 +525,19 @@ body {
 
   /* Academy section */
   .academy-wrapper {
-    padding: 100px 20px; /* proportional spacing */
+    padding: 100px 20px;
   }
 
   .academy-intro {
-    margin-top: 50px; /* proportional */
+    margin-top: 50px;
   }
 
   .academy-pillars {
-    margin-top: 80px; /* proportional */
+    margin-top: 80px;
   }
 
   .academy-for {
-    margin-top: 100px; /* proportional */
+    margin-top: 100px;
   }
 
   .academy-for h3 {
@@ -534,9 +551,9 @@ body {
 
   /* Program section */
   .program-wrapper {
-    padding: 100px 20px; /* same as academy-wrapper */
+    padding: 100px 20px;
   }
-  
+
   .program-header h2 {
     font-size: 18px;
     letter-spacing: 0.18em;
