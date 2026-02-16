@@ -71,7 +71,7 @@ window.addEventListener("DOMContentLoaded", () => {
   // KARTY — FADE IN ON SCROLL
   // =============================
   const revealElements = document.querySelectorAll(
-    '.module-card, .academy-wrapper'
+    '.module-card'
   );
   
   const observer = new IntersectionObserver(entries => {
