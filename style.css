@@ -42,9 +42,10 @@ body {
   transform: translateY(60px);
   background: linear-gradient(
     to bottom,
-    rgb(240,240,240) 0%,
-    #ffffff 100%
-  );  
+    rgb(240, 240, 240) 0%,
+    rgb(240, 240, 240) 90%,
+    white 100%
+  );
   transition: opacity 1.2s ease, transform 1.2s ease;
 }
 
@@ -163,11 +164,6 @@ body {
 
 .academy-wrapper {
   padding: 140px 24px;
-  background: linear-gradient(
-    to bottom,
-    #ffffff 100%,
-    rgb(245, 245, 245) 0%
-  );  
   background-color: white;
 }
 
@@ -295,7 +291,12 @@ body {
 
 .program-wrapper {
   padding: 140px 24px; /* same as academy-wrapper */
-  background: linear-gradient(to bottom, white, rgb(240,240,240));
+  background: linear-gradient(
+    to top,
+    rgb(240, 240, 240) 0%,
+    rgb(240, 240, 240) 90%,
+    white 100%
+  );
 }
 
 .program-header {
