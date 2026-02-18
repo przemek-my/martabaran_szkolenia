@@ -50,7 +50,7 @@ body {
 
 .hero-section h1 {
   margin: 0;
-  font-size: 60px;
+  font-size: 6vh;
   font-weight: 300;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -66,7 +66,7 @@ body {
 
 .hero-section p {
   margin-top: 24px;
-  font-size: 14px;
+  font-size: 1.5vh;
   letter-spacing: 0.4em;
   text-transform: uppercase;
   color: #737373;
@@ -75,7 +75,7 @@ body {
 .hero-author {
   display: block;
   margin-top: 12px;
-  font-size: 12px;
+  font-size: 1.3vh;
   font-weight: 300;
   letter-spacing: 0.15em;
   color: #737373;
@@ -132,7 +132,7 @@ body {
 }
 
 .scroll-indicator span {
-  font-size: 11px;
+  font-size: 1.1vh;
   letter-spacing: 0.4em;
   text-transform: uppercase;
   opacity: 0.6;
@@ -168,7 +168,7 @@ body {
 }
 
 .academy-title {
-  font-size: 28px;
+  font-size: 2.8vh;
   font-weight: 500;
   letter-spacing: 0.28em;
   text-transform: uppercase;
@@ -176,7 +176,7 @@ body {
 
 .academy-tagline {
   margin-top: 28px;
-  font-size: 12px;
+  font-size: 1.2vh;
   letter-spacing: 0.4em;
   text-transform: uppercase;
   opacity: 0.55;
@@ -189,7 +189,7 @@ body {
 
 .academy-intro p {
   margin-top: 22px;
-  font-size: 17px;
+  font-size: 1.7vh;
   line-height: 2;
   opacity: 0.85;
 }
@@ -210,7 +210,7 @@ body {
 
 .pillar h3 {
   margin-bottom: 22px;
-  font-size: 12px;
+  font-size: 1.2vh;
   letter-spacing: 0.35em;
   text-transform: uppercase;
   opacity: 0.6;
@@ -228,7 +228,7 @@ body {
 .pillar p {
   max-width: 260px;
   margin: 0 auto;
-  font-size: 15px;
+  font-size: 1.5vh;
   line-height: 1.9;
   opacity: 0.8;
 }
@@ -242,10 +242,19 @@ body {
 
 .academy-for h3 {
   margin-bottom: 36px; /* consistent spacing */
-  font-size: 12px;
+  font-size: 1.2vh;
   letter-spacing: 0.35em;
   text-transform: uppercase;
   opacity: 0.6;
+}
+
+.academy-for h3::after {
+  content: "";
+  display: block;
+  width: 32px;        /* szerokość kreski, jak w pillar */
+  height: 1px;        /* grubość kreski */
+  margin: 16px auto 0; /* odstęp od nagłówka, wyśrodkowanie */
+  background: rgba(0, 0, 0, 0.2); /* kolor kreski */
 }
 
 .academy-for ul {
@@ -256,14 +265,14 @@ body {
 
 .academy-for li {
   margin-bottom: 18px;
-  font-size: 15px;
+  font-size: 1.5vh;
   line-height: 1.9;
   opacity: 0.8;
 }
 
 .academy-cta {
   margin-top: 100px; /* consistent spacing */
-  font-size: 18px;
+  font-size: 1.8vh;
   font-weight: 500;
   letter-spacing: 0.02em;
   opacity: 0.95;
@@ -286,7 +295,7 @@ body {
 }
 
 .program-header h2 {
-  font-size: 28px;
+  font-size: 2.8vh;
   font-weight: 500;
   letter-spacing: 0.28em;
   text-transform: uppercase;
@@ -294,7 +303,7 @@ body {
 
 .program-header p {
   margin-top: 24px;
-  font-size: 15px;
+  font-size: 1.5vh;
   line-height: 1.8;
   opacity: 0.7;
 }
@@ -335,13 +344,13 @@ body {
   position: absolute;
   top: 24px;
   right: 24px;
-  font-size: 96px;
+  font-size: 9.6vh;
   font-weight: 200;
   color: rgba(0, 0, 0, 0.05);
 }
 
 .label {
-  font-size: 11px;
+  font-size: 1.1vh;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   opacity: 0.5;
@@ -349,7 +358,7 @@ body {
 
 .module-card h3 {
   margin-top: 12px;
-  font-size: 22px;
+  font-size: 2.2vh;
   font-weight: 500;
 }
 
@@ -368,10 +377,110 @@ body {
 .module-card p {
   margin-top: 20px;
   max-width: 600px;
-  font-size: 15px;
+  font-size: 1.5vh;
   line-height: 1.8;
   opacity: 0.7;
 }
+
+.module-card p strong {
+  font-weight: 500;
+}
+
+.module-card:hover p {
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+.module-list {
+  margin-top: 20px;
+  padding-left: 0;
+  list-style: none;
+  font-size: 1.5vh;
+  line-height: 1.8;
+  opacity: 0.7;
+}
+
+.module-list li {
+  margin-bottom: 14px;
+  padding-left: 18px;
+  position: relative;
+}
+
+.module-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.module-list span {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+/* =======================================================
+   PROGRAM PRICE
+======================================================= */
+.program-cost {
+  margin: 80px auto 0;
+  max-width: 600px;
+  text-align: center;
+  color: #202020;
+  font-family: 'Jost', sans-serif;
+}
+
+.program-cost h3 {
+  font-size: 1.8vh;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  opacity: 0.6;
+  margin: 24px 0;
+}
+
+.program-cost p {
+  font-size: 1.6vh;
+  line-height: 1.7;
+  margin: 8px 0;
+  opacity: 0.85;
+}
+
+.program-cost p strong {
+  font-weight: 600;
+}
+
+.cost-line {
+  border: none;
+  height: 1px;
+  background: rgba(0,0,0,0.1);
+  margin: 0 auto;
+  width: 60px;
+}
+
+.payment-note {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 1.4vh;
+  opacity: 0.65;
+}
+
+.payment-note a {
+  color: #202020;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.payment-note a:hover {
+  opacity: 0.8;
+}
+
+
+
 /* =======================================================
    INTRO LANDING
 ======================================================= */
@@ -401,7 +510,7 @@ body {
 
 .intro-name {
   margin: 0;
-  font-size: 42px;
+  font-size: 4.2vh;
   font-weight: 300;
   letter-spacing: 0.25em;
   text-transform: uppercase;
@@ -421,7 +530,7 @@ body {
 
 .intro-role {
   margin: 0;
-  font-size: 13px;
+  font-size: 1.3vh;
   letter-spacing: 0.4em;
   text-transform: uppercase;
   opacity: 0;
@@ -473,7 +582,7 @@ body {
   }
 
   .academy-intro p {
-    font-size: 16px;
+    font-size: 1.6vh;
   }
 }
 
@@ -588,4 +697,33 @@ body {
     font-size: 14px;
     line-height: 1.7;
   }
+}
+
+
+
+
+
+
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.55);
+  background: #fafafa; /* subtelny kontrast w stosunku do ostatniej sekcji */
+  border-top: 1px solid rgba(0,0,0,0.05);
+  font-family: 'Jost', sans-serif;
+}
+
+.site-footer a {
+  color: rgba(0,0,0,0.7);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.site-footer a:hover {
+  color: rgba(0,0,0,0.95);
+  transform: translateY(-2px);
 }
