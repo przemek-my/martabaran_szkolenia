@@ -578,24 +578,24 @@ body {
   }
 
   .pillar p {
-    font-size: 1.6vh;
+    font-size: 1.7vh;
     max-width: 100%;
   }
 
   .pillar h3 {
-    font-size: 1.5vh;
+    font-size: 1.6vh;
   }
 
   .academy-for li{
-    font-size: 1.6vh;
+    font-size: 1.7vh;
   }
 
   .academy-intro p {
-    font-size: 1.6vh;
+    font-size: 1.7vh;
   }
 
   .academy-for h3{
-    font-size: 1.5vh;
+    font-size: 1.6vh;
   }
 }
 
@@ -618,22 +618,22 @@ body {
 
   /* Hero */
   .hero-section h1 {
-    font-size: 4.4vh;
+    font-size: 4.5vh;
     letter-spacing: 0.15em;
   }
 
   .hero-section p {
-    font-size: 1.4vh;
+    font-size: 1.5vh;
     letter-spacing: 0.25em;
     margin-top: 18px;
   }
 
   .hero-author{
-    font-size: 1.4vh;
+    font-size: 1.5vh;
   }
 
   .scroll-indicator {
-    font-size: 1.4vh;
+    font-size: 1.5vh;
     bottom: 90px;
   }
 
@@ -663,12 +663,12 @@ body {
   }
 
   .academy-title {
-    font-size: 2.5vh;
+    font-size: 2.6vh;
     letter-spacing: 0.18em;
   }
 
   .academy-tagline{
-    font-size: 1.4vh;
+    font-size: 1.5vh;
   }
 
   /* Program section */
@@ -677,12 +677,12 @@ body {
   }
 
   .program-header h2 {
-    font-size: 2.5vh;
+    font-size: 2.6vh;
     letter-spacing: 0.18em;
   }
 
   .program-header p {
-    font-size: 1.6vh;
+    font-size: 1.7vh;
     line-height: 1.7;
   }
 
@@ -701,22 +701,22 @@ body {
   }
 
   .bg-number {
-    font-size: 56px;
+    font-size: 5.7vh;
     top: 18px;
     right: 18px;
   }
 
   .label {
-    font-size: 1.1vh;
+    font-size: 1.2vh;
     letter-spacing: 0.15em;
   }
 
   .module-card h3 {
-    font-size: 2vh;
+    font-size: 2.1vh;
   }
 
   .module-list {
-    font-size: 1.6vh;
+    font-size: 1.7vh;
     line-height: 1.7;
   }
 }
@@ -726,7 +726,7 @@ body {
 .site-footer {
   text-align: center;
   padding: 1.0vh 1.0vh;
-  font-size: 0.9rem;
+  font-size: 1.2vh;
   color: rgba(0, 0, 0, 0.55);
   background: #fafafa; /* subtelny kontrast w stosunku do ostatniej sekcji */
   border-top: 1px solid rgba(0,0,0,0.05);
