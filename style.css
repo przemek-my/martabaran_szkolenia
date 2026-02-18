@@ -707,6 +707,19 @@ body {
     font-size: 1.8vh;
     line-height: 1.7;
   }
+
+  .program-cost h3{
+    font-size: 2.2vh;
+  }
+
+  .program-cost p{
+    font-size: 1.8vh;
+  }
+
+  .payment-note {
+    font-size: 1.6vh;
+  }
+
 }
 
 
@@ -714,7 +727,7 @@ body {
 .site-footer {
   text-align: center;
   padding: 1.0vh 1.0vh;
-  font-size: 1.2vh;
+  font-size: 1.6vh;
   color: rgba(0, 0, 0, 0.55);
   background: #fafafa; /* subtelny kontrast w stosunku do ostatniej sekcji */
   border-top: 1px solid rgba(0,0,0,0.05);
