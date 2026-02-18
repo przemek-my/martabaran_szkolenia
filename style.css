@@ -12,7 +12,7 @@ html {
 
 body {
   margin: 0;
-  background-color: rgb(245, 245, 245);
+  background-color: rgb(240,240,240);
   color: #202020;
   font-family: 'Jost', sans-serif;
 }
@@ -40,6 +40,11 @@ body {
   text-align: center;
   opacity: 0;
   transform: translateY(60px);
+  background: linear-gradient(
+    to bottom,
+    rgb(240,240,240) 0%,
+    #ffffff 100%
+  );  
   transition: opacity 1.2s ease, transform 1.2s ease;
 }
 
@@ -158,6 +163,11 @@ body {
 
 .academy-wrapper {
   padding: 140px 24px;
+  background: linear-gradient(
+    to bottom,
+    #ffffff 100%,
+    rgb(245, 245, 245) 0%
+  );  
   background-color: white;
 }
 
@@ -285,7 +295,7 @@ body {
 
 .program-wrapper {
   padding: 140px 24px; /* same as academy-wrapper */
-  background: linear-gradient(to bottom, rgb(250, 250, 250), #fafafa);
+  background: linear-gradient(to bottom, white, rgb(240,240,240));
 }
 
 .program-header {
@@ -735,7 +745,7 @@ body {
   padding: 1.0vh 1.0vh;
   font-size: 1.6vh;
   color: rgba(0, 0, 0, 0.55);
-  background: #fafafa; /* subtelny kontrast w stosunku do ostatniej sekcji */
+  background-color: rgb(240,240,240);
   border-top: 1px solid rgba(0,0,0,0.05);
   font-family: 'Jost', sans-serif;
 }
