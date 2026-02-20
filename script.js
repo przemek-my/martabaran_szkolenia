@@ -94,8 +94,22 @@ window.addEventListener("DOMContentLoaded", () => {
 
 });
 
+let scrollY = 0;
+
+function lockScroll() {
+  scrollY = window.scrollY;
+  document.body.style.top = `-${scrollY}px`;
+  document.body.classList.add("no-scroll");
+}
+
+function unlockScroll() {
+  document.body.classList.remove("no-scroll");
+  document.body.style.top = "";
+  window.scrollTo(0, scrollY);
+}
+
 // 1️⃣ Zablokuj scroll od razu
-document.body.classList.add('no-scroll');
+lockScroll();
 
 // 2️⃣ Po zakończeniu intro → odblokuj scroll
 window.addEventListener("load", () => {
@@ -107,8 +121,8 @@ window.addEventListener("load", () => {
     if (intro) intro.style.display = 'none';
 
     // odblokuj scroll
-    document.body.classList.remove('no-scroll');
-
+    unlockScroll();
+    
     // uruchom animacje hero
     document.querySelector(".hero-section")?.classList.add("reveal-visible");
 
