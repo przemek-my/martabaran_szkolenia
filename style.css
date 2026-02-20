@@ -587,37 +587,37 @@ body {
   }
 
   .pillar p {
-    font-size: 0.9vw;
+    font-size: 1.8dvh;
     max-width: 100%;
   }
 
   .pillar h3 {
-    font-size: 0.85dvw;
+    font-size: 1.7dvh;
   }
 
   .academy-for li{
-    font-size: 0.9dvw;
+    font-size: 1.8dvh;
   }
 
   .academy-intro p {
-    font-size: 0.9dvw;
+    font-size: 1.8dvh;
   }
 
   .academy-for h3{
-    font-size: 0.85dvw;
+    font-size: 1.7dvh;
   }
 
   .hero-section h1 {
-    font-size: 2.25dvw;
+    font-size: 4.5dvh;
     font-weight: 450;
   }
 
   .hero-section p {
-    font-size: 0.8dvw;
+    font-size: 1.6dvh;
   }
 
   .hero-author {
-    font-size: 0.7dvw;
+    font-size: 1.4dvh;
   }
 
 }
@@ -630,13 +630,13 @@ body {
   }
 
   .intro-name {
-    font-size: 4.25dvw;
+    font-size: 8.5vw;
     font-weight: 450;
     letter-spacing: 0.2em;
   }
 
   .scroll-indicator {
-    font-size: 0.75dvw;
+    font-size: 1.5dvh;
     bottom: 90px;
   }
 
@@ -666,12 +666,12 @@ body {
   }
 
   .academy-title {
-    font-size: 1.35dvw;
+    font-size: 2.7dvh;
     letter-spacing: 0.18em;
   }
 
   .academy-tagline{
-    font-size: 0.8dvw;
+    font-size: 1.6dvh;
   }
 
   /* Program section */
@@ -680,12 +680,12 @@ body {
   }
 
   .program-header h2 {
-    font-size: 1.35dvw;
+    font-size: 2.7dvh;
     letter-spacing: 0.18em;
   }
 
   .program-header p {
-    font-size: 0.9dvw;
+    font-size: 1.8dvh;
     line-height: 1.7;
   }
 
@@ -704,35 +704,35 @@ body {
   }
 
   .bg-number {
-    font-size: 2.85dvw;
+    font-size: 5.7dvh;
     top: 18px;
     right: 18px;
   }
 
   .label {
-    font-size: 6.5dvw;
+    font-size: 1.3dvh;
     letter-spacing: 0.15em;
   }
 
   .module-card h3 {
-    font-size: 1.1dvw;
+    font-size: 2.2dvh;
   }
 
   .module-list {
-    font-size: 0.9dvw;
+    font-size: 1.8dvh;
     line-height: 1.7;
   }
 
   .program-cost h3{
-    font-size: 1.1dvw;
+    font-size: 2.2dvh;
   }
 
   .program-cost p{
-    font-size: 0.9dvw;
+    font-size: 1.8dvh;
   }
 
   .payment-note {
-    font-size: 0.8dvw;
+    font-size: 1.6dvh;
   }
 
 }
