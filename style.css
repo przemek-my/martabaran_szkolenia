@@ -587,37 +587,37 @@ body {
   }
 
   .pillar p {
-    font-size: 1.8dvh;
+    font-size: 0.9vw;
     max-width: 100%;
   }
 
   .pillar h3 {
-    font-size: 1.7dvh;
+    font-size: 0.85dvw;
   }
 
   .academy-for li{
-    font-size: 1.8dvh;
+    font-size: 0.9dvw;
   }
 
   .academy-intro p {
-    font-size: 1.8dvh;
+    font-size: 0.9dvw;
   }
 
   .academy-for h3{
-    font-size: 1.7dvh;
+    font-size: 0.85dvw;
   }
 
   .hero-section h1 {
-    font-size: 4.5dvh;
+    font-size: 2.25dvw;
     font-weight: 450;
   }
 
   .hero-section p {
-    font-size: 1.6dvh;
+    font-size: 0.8dvw;
   }
 
   .hero-author {
-    font-size: 1.4dvh;
+    font-size: 0.7dvw;
   }
 
 }
@@ -630,13 +630,13 @@ body {
   }
 
   .intro-name {
-    font-size: 8.5vw;
+    font-size: 4.25dvw;
     font-weight: 450;
     letter-spacing: 0.2em;
   }
 
   .scroll-indicator {
-    font-size: 1.5dvh;
+    font-size: 0.75dvw;
     bottom: 90px;
   }
 
@@ -666,12 +666,12 @@ body {
   }
 
   .academy-title {
-    font-size: 2.7dvh;
+    font-size: 1.35dvw;
     letter-spacing: 0.18em;
   }
 
   .academy-tagline{
-    font-size: 1.6dvh;
+    font-size: 0.8dvw;
   }
 
   /* Program section */
@@ -680,12 +680,12 @@ body {
   }
 
   .program-header h2 {
-    font-size: 2.7dvh;
+    font-size: 1.35dvw;
     letter-spacing: 0.18em;
   }
 
   .program-header p {
-    font-size: 1.8dvh;
+    font-size: 0.9dvw;
     line-height: 1.7;
   }
 
@@ -704,35 +704,35 @@ body {
   }
 
   .bg-number {
-    font-size: 5.7dvh;
+    font-size: 2.85dvw;
     top: 18px;
     right: 18px;
   }
 
   .label {
-    font-size: 1.3dvh;
+    font-size: 6.5dvw;
     letter-spacing: 0.15em;
   }
 
   .module-card h3 {
-    font-size: 2.2dvh;
+    font-size: 1.1dvw;
   }
 
   .module-list {
-    font-size: 1.8dvh;
+    font-size: 0.9dvw;
     line-height: 1.7;
   }
 
   .program-cost h3{
-    font-size: 2.2dvh;
+    font-size: 1.1dvw;
   }
 
   .program-cost p{
-    font-size: 1.8dvh;
+    font-size: 0.9dvw;
   }
 
   .payment-note {
-    font-size: 1.6dvh;
+    font-size: 0.8dvw;
   }
 
 }
