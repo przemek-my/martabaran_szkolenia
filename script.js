@@ -128,3 +128,13 @@ window.addEventListener("load", () => {
 
   }, 3000); // czas w ms → dopasuj do długości animacji intro
 });
+
+
+// Przeskakiwanie
+function setStableVH() {
+  const vh = window.innerHeight * 0.01; // 1% height
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+
+setStableVH();
+window.addEventListener('resize', setStableVH);
